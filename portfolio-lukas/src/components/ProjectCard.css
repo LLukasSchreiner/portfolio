@@ -1,0 +1,74 @@
+.project-card {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: var(--spacing-sm);
+  padding: 1rem 2rem;
+  transform-style: preserve-3d;
+  transform-origin: center;
+}
+
+.project-card__title {
+  font-family: 'MaPolice', sans-serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 900;
+  font-style: italic;
+  line-height: 1;
+  color: #000000;
+  text-align: right;
+  user-select: none;
+  position: relative;
+  z-index: 2;
+}
+
+.project-card__slash {
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  margin-right: 0.5rem;
+}
+
+/* Particules */
+.particle {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.particle-1 {
+  top: 15%;
+  right: -30px;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.9);  /* ✅ BLANC */
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+.particle-2 {
+  top: 50%;
+  right: -40px;
+  width: 15px;
+  height: 15px;
+  background: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+.particle-3 {
+  top: 80%;
+  right: -25px;
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+  .project-card__title {
+    font-size: 3rem;
+    text-align: center;
+  }
+  
+  .project-card {
+    padding: 1rem;
+  }
+}
