@@ -1,0 +1,126 @@
+.home {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* SIDEBAR GAUCHE */
+.home__sidebar {
+  width: 40%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--spacing-lg);
+  overflow: hidden;
+  position: sticky;  
+  top: 0;
+}
+
+.home__sidebar-content {
+  width: 100%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+}
+
+.home__name {
+  font-size: clamp(3rem, 5vw, 5rem);
+  font-weight: 800;
+  line-height: 0.9;
+  margin-bottom: var(--spacing-md);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home__name:hover {
+  color: transparent;
+  -webkit-text-stroke: 2px var(--text-white);
+}
+
+.home__info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  font-size: 0.9rem;
+}
+
+.home__description p {
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.home__nav ul {
+  list-style: none;
+}
+
+.home__nav li {
+  margin-bottom: 0.5rem;
+}
+
+.home__nav a {
+  color: var(--text-white);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.home__nav a span {
+  font-size: 0.75rem;
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+.home__nav a:hover {
+  color: var(--text-black);
+  transform: translateX(5px);
+}
+
+/* SECTION PROJETS */
+.home__projects {
+  width: 60%;
+  height: 100vh; 
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--spacing-md);
+  padding-top: var(--spacing-lg);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.home__projects-container {
+  width: 100%;
+  max-width: 900px;
+  perspective: 1200px;
+  perspective-origin: center right;
+  padding-bottom: var(--spacing-lg);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .home {
+    flex-direction: column;
+    height: auto; 
+    overflow: visible;
+  }
+  
+  .home__sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;  
+  }
+  
+  .home__sidebar,
+  .home__projects {
+    width: 100%;
+  }
+  
+  .home__sidebar {
+    min-height: auto;
+    align-items: center;
+  }
+  
+  .home__projects {
+    height: auto;
+  }
+}

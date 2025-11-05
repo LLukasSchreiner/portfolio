@@ -1,0 +1,53 @@
+/* STYLES GLOBAUX */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'MaPolice';
+  src: url('/fonts/STRRETCH SANS FREE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MaPolice2';
+  src: url('/fonts/Akira Expanded Demo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /* Couleurs */
+  --primary-blue: #4801ff;
+  --dark-blue: #3200cc;
+  --bg-light: #eef5f4;
+  --text-white: #ffffff;
+  --text-black: #000000;
+  
+  /* Espacements */
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: var(--primary-blue);
+  color: var(--text-white);
+  overflow-x: hidden;
+}
+
+/* Cache la scrollbar native */
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;  /* IE et Edge */
+  scrollbar-width: none;  /* Firefox */
+}
