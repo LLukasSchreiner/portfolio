@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
-import Home from './pages/Home.jsx'
+import Home from './pages/home.jsx'
 import ProjectOverlay from './components/ProjectOverlay'
 
 function App() {
